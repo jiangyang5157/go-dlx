@@ -142,7 +142,7 @@ func uncover(col *Column) {
 // Search runs Algorithm X.
 // Search Passes solution through f() when a completed solution found, Algorithm X will continue for next solution if f() returns false.
 // Search ends normally, or the f() returns true.
-func (x *X) Search(f func(sol Solution) bool) bool {
+func (x *X) Search(f func(Solution) bool) bool {
 	head := &x.Cols[0]
 	hrc := head.Right.Col
 	if hrc == head {
